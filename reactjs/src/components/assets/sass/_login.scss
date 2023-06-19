@@ -1,0 +1,42 @@
+body:has(.login) {
+  background-color: var(--background-color);
+}
+.login {
+  & > .row {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .bg-image {
+    background-image: url('/assets/img/bg.jpg');
+    background-position: left;
+    background-size: cover;
+  }
+  min-height: 100vh;
+  & > .row {
+    height: 100vh;
+  }
+  .form-parent {
+    background-color: var(--light);
+    height: 100%;
+    .row {
+      height: 100%;
+    }
+  }
+  p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+  }
+  form {
+    input {
+      min-height: 50px;
+    }
+    button {
+      width: 100%;
+      background-color: var(--main);
+      min-height: 50px;
+      border: none;
+      &:hover {
+        background-color: var(--main-hover) !important;
+      }
+    }
+  }
+}

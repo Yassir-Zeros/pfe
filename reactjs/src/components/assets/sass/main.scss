@@ -1,0 +1,15 @@
+:root {
+  --background-color: #F6F6F6;
+  --light: #FFF;
+  --light-gray: #EEE;
+  --main: #476F66;
+  --main-hover: #324e48;
+}
+
+span {
+  font-weight: 300;
+}
+
+@import './main';
+@import './aside';
+@import './login';

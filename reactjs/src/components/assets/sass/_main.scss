@@ -1,0 +1,74 @@
+.root {
+  min-height: 100vh;
+  main {
+    background-color: var(--background-color);
+    flex: auto;
+    .profile {
+      background-color: var(--light);
+      cursor: pointer;
+    }
+    .dashboard-card {
+      background-color: var(--light);
+    }
+    .data-table {
+      .data-table-header {
+        .tabs {
+          .tab {
+            cursor: pointer;
+            &:hover {
+              color: var(--main);
+            }
+            &.active {
+              color: var(--main);
+              border-bottom: solid 1px var(--main);
+            }
+          }
+        }
+        .actions {
+          input {
+            flex: auto;
+            border: none;
+            background-color: var(--light-gray);
+            &::after {
+              font-family: "Font Awesome 6 Free";
+              content: '\f002';
+            }
+          }
+          button {
+            width: 500px;
+            background-color: var(--main);
+            border: none;
+            &:hover {
+              background-color: var(--main-hover);
+            }
+          }
+        }
+      }
+      .data-table-main {
+        table {
+          width: 100%;
+          border-collapse:separate; 
+          border-spacing: 0 1em;
+          border-radius: 10px;
+          // text-align: center;
+            tr, th {
+              background-color: var(--light);
+              td {
+                padding: 20px 10px;
+                small {
+                  color: rgba(0, 0, 0, 0.5);
+                }
+              }
+            }
+            thead tr {
+              background-color: var(--light-gray);
+              td {
+                color: rgba(0, 0, 0, 0.6);
+                // text-align: left;
+              }
+            }
+          }
+      }
+    }
+  }
+}

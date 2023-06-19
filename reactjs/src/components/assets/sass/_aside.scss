@@ -1,0 +1,26 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  aside {
+    width: 250px;
+    min-height: 100vh;
+    background-color: var(--light);
+    ul{
+      list-style-type: none;
+      padding: 0 !important;
+      margin:  0 !important;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        a {
+          text-decoration: none;
+          color: rgba(0, 0, 0, 0.522);
+          &.active {
+            color: var(--main);
+          }
+        }
+      }
+    }
+  }
+}
